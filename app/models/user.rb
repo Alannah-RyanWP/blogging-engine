@@ -1,6 +1,7 @@
 class User < ApplicationRecord
     validates_presence_of :firstname
     validates_presence_of :secondname
+    validates_format_of :email, :with => /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/i
     #validate :password_complexity
     def password_complexity
         # Regexp extracted from https://stackoverflow.com/questions/19605150/regex-for-password-must-contain-at-least-eight-characters-at-least-one-number-a
