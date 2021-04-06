@@ -36,7 +36,7 @@ body {
 
 <div class="topnav">
   <a class="active" href="#home">Home</a>
-
+  <a href="login">Login</a>
   <a href="#contact">Contact</a>
   <a href="#about">About</a>
 </div>
@@ -49,7 +49,6 @@ body {
   <div class="container">
     <p>Please fill in this form to create an account.</p>
     <hr>
-<p> <%= link_to “Sign In”, users_signin_path %> </p>
     <label for="firstname"><b>First Name</b></label>
     <input type="firstname" placeholder="First Name" name="firstname" id="firstname" required>
     <hr>
@@ -67,5 +66,6 @@ body {
     <hr>
 
     <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+    <p>If you already have an account you can <a href="#">login here </a>.</p>
     <button type="submit" class="registerbtn">Register</button>
   </div>
